@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+       a {
+        color: cyan;
+        text-decoration: none;
+        font-weight: bold;
+       } 
+       a:visited {
+        color: darkcyan;
+       }
+       a:hover {
+        color: blue;
+        text-decoration: underline;
+       }
+       .especial {
+        background-color: crimson;
+        width: 200px;
+       }
+       .especial::before {
+        content: '  »';
+       }
+       .especial::after {
+        content: '«  ';
+       }
+    </style>
+</head>
+<body>
+    <h1>Pseudoelementos - Personalizando Links</h1>
+    <ul>
+        <a href="https://youtube.com" target="_blank" rel="external">
+            <li>Youtube</li>
+        </a>
+        <a href="https://www.leagueoflegends.com/en/" target="_blank" rel="external" >
+            <li class="especial">League of Legends</li>
+        </a>
+        <a href="https://www.marvelrivals.com" target="_blank" rel="external">
+            <li>Marvel Rivals</li>
+        </a>
+    </ul>
+</body>
+</html>

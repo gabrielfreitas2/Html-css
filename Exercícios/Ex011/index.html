@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Utilizando &lt;picture&gt;</h1>
+    <p>assim podemos mudar a resolução ou ate mesmo a propria imagem de acordo com o tamanho da tela, tente mudar o tamanho dela.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagen flexivel">
+    </picture>
+
+    <h1>Utilizando Audios</h1>
+    <h2>Forma mais simples.</h2>
+    <p>Clique no play para ouvir minha musica favorita de AM.</p>
+    <audio src="midia/little-ilusion-machine.mp3" controls></audio>
+    <!-- MP3 - WAV - OGG -->
+     <h2>forma "ideal" mais complexa.</h2>
+     <p>Alguns navegadores podem nao ser compativeis com tal formato de audio, ou ate mesmo nenhum dos formatos de audio, <br>logo você precisa de um codigo que teste os tipos de audio que o navegador suporta, e mostre o audio no formato ideal, <br>ou ate mesmo avisar que o navegador nao suporta nenhum formato. (vai la da uma olhada no código pra ver)</p>
+     <audio preload="metadata" controls>
+        <source src="midia/little-ilusion-machine.mp3" type="audio/mpeg">
+        <source src="midia/little-ilusion-machine.ogg" type="audio/ogg">
+        <source src="midia/little-ilusion-machine.wav" type="audio/wav">
+        <p>Seu navegador não suporta os formatos de audio, clique <a href="midia/little-ilusion-machine.mp3" download="little-ilusion-machine.mp3" type="audio/mp3">aqui</a> para baixar a música.</p>
+        <!-- o paragrafo nao ta funcionando por algum caralhos de motivo -->
+     </audio>
+     <h1>Vídeos!</h1>
+     <h2>Vídeos hospedados localmente.</h2>
+     <p>Também podemos fazer igual o audio, da forma complicada com varios formatos e etc. Agora, aprecie esta obra prima!</p>
+     <video width="750px" controls preload="metadata" poster="imagens/crying-lightning.jpg">
+        <source src="midia/crying-lightning.mp4" type="video/mp4">
+        <p>Nao foi possivel carregar o video.</p>
+     </video>
+     <h2>Vídeos hospedados externamente</h2>
+     <p>Também podemos fazer de uma forma mil vezes mais sustentavel, que é <br>hospedar um video no youtube, ou vimeo, e colocar no site. Aprecie este belo clear de fiddle.</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/q98EIiPhDAs?si=MI4rFMRoffM2TX1b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
