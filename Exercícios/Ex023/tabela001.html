@@ -11,19 +11,18 @@
         table {
             border-collapse: collapse;
             width:300px;
+            height: 300px;
         }
 
         td {
             padding: 6px;
             border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
         }
 
-        tr.linha {
-            background-color: gray;
-        }
-
-        td.dado {
-            background-color: yellow;
+        td.numero {
+            text-align: right;
         }
     </style>
 </head>
@@ -35,7 +34,7 @@
         <td>C1</td>
     </tr>
 
-    <tr class="linha">
+    <tr>
         <td>A2</td>
         <td>B2</td>
         <td>C2</td>
@@ -43,23 +42,14 @@
 
     <tr>
         <td>A3</td>
-        <td>B3</td>
-        <td>C3</td>
+        <td class="numero">B3</td>
+        <td class="numero">C3</td>
     </tr>
 
     <tr>
         <td>A4</td>
-        <td class="dado">B4</td>
+        <td>B4</td>
         <td>C4</td>
-    </tr>
-
-    <tr>
-        <td>A5</td>
-        <td>B5</td>
-    </tr>
-
-    <tr>
-        <td>A6</td>
     </tr>
 </table>
 </body>
