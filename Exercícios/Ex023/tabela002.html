@@ -7,34 +7,38 @@
     <style>
         table {
             border-collapse: collapse;
-            width: 400px;
+            width: 500px;
         }
         td, th {
             border: 1px solid black;
             padding: 8px;
         }
         thead, tfoot {
-            background-color: gray;
-            color: white;
+            background-color: gray;           color: white;
         }
         .num {
-            text-align: right;
+            text-align: right; 
         }
         caption {
-            font-style: bold;
+            font-weight: bolder;
             background-color: rgb(170, 170, 170);
+            font-size: 1.3em;
+            padding: 4px;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: grey;
         }
     </style>
 </head>
 <body>
+    <h1>Minha primeira tabela!</h1>
     <table>
-    <thead>
         <caption>População por Estado</caption>
+    <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>
-    
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr> 
     </thead>
     <tbody>
     
@@ -78,11 +82,79 @@
                 <td>Santa Catarina</td>
                 <td class="num">8.058.441</td>
             </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.325.123</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">4.875.126</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.425.735</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.234.129</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.102.129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.834.126</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.446.865</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.375.445</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.223.098</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.989.276</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.901.818</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.291.077</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.732.998</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.577.889</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">880.331</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802.837</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">716.793</td>
+            </tr>
     </tbody>
     <tfoot>
     
             <tr>
-                <th>População total</th>
+                <th scope="row">População total</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
        
